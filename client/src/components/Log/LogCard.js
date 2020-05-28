@@ -11,7 +11,8 @@ const LogCard = (props) => {
       <CardTitle><h3>{props.title}</h3></CardTitle>
       <CardBody>
         <CardText>{props.note}</CardText>
-        <Badge color="success" pill className="blackText"> {props.category} </Badge>
+        <CardText>{props.category}</CardText>
+        <Badge color="success" pill className="blackText"> {props.technology} </Badge>
       </CardBody>
     </Card>
   );

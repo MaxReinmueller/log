@@ -5,7 +5,7 @@ import noteAPI from '../utils/noteAPI';
 import { Container, Row, Col, Button } from 'reactstrap';
 import MobileNav from '../components/nav/MobileNav';
 import LogCard from '../components/Log/LogCard';
-import CreateLog from '../components/Log/CreateLog';
+import CreateNote from '../components/Log/CreateNote';
 
 class Log extends React.Component {
 constructor(props){
@@ -16,7 +16,7 @@ constructor(props){
         title: '',
         note: '',
         technology: '',
-        category: [],
+        category: '',
         date: ''
       }
 }
@@ -27,7 +27,7 @@ constructor(props){
   
   loadNotes = () => {
     noteAPI.getNotes()
-      .then(res => this.setState({notes: res.data, title: '', note: '', technology: '', ategory: [], date: ''}))
+      .then(res => this.setState({notes: res.data, title: '', note: '', technology: '', category: '', date: ''}))
       .catch(err => console.log(err));
   };
 
@@ -65,7 +65,7 @@ render(){
       <MobileNav />
       <Container>
       <h1 className="headerText mt-4 mb-3">Log Entries </h1>
-      <CreateLog />
+      <CreateNote />
       <p className="headerText mt-3">Some kind of filter goes here</p>
       {this.state.log_entries.map((entry) => (
       <LogCard 
