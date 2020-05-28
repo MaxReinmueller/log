@@ -1,0 +1,17 @@
+.navBox {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 5rem;
+  
+}
+
+.NavTitles {
+  background-color: rgb(79, 206, 79);
+}
+
+.longNav {
+  padding-top: .7rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-bottom: green;
+}
