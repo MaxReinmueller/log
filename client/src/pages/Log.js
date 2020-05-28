@@ -47,7 +47,7 @@ constructor(props){
 	handleFormSubmit = event => {
 		event.preventDefault();
 		if (this.state.title && this.state.note && this.state.technology && this.state.category && this.state.date) {
-			API.saveBook({
+			noteAPI.saveNote({
 				title: this.state.title,
         note: this.state.note,
         technology: this.state.technology,

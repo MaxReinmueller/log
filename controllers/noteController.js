@@ -1,29 +1,29 @@
-const Book = require('../models/Notes');
+const Note = require('../models/Notes');
 
 module.exports = {
 	findAll: function(req, res) {
-		Book.find(req.query)
+		Note.find(req.query)
 			.then(notes => res.json(notes))
 			.catch(err => res.status(422).json(err));
 	},
 	findById: function(req, res) {
-		Book.findById(req.params.id)
+		Note.findById(req.params.id)
 			.then(notes => res.json(notes))
 			.catch(err => res.status(422).json(err));
 	},
 	create: function(req, res) {
-		Book.create(req.body)
+		Note.create(req.body)
 			.then(newNote => res.json(newNote))
 			.catch(err => res.status(422).json(err));
 	},
 	update: function(req, res) {
-		Book.findOneAndUpdate({ _id: req.params.id }, req.body)
+		Note.findOneAndUpdate({ _id: req.params.id }, req.body)
 			.then(note => res.json(note))
 			.catch(err => res.status(422).json(err));
 	},
 	remove: function(req, res) {
-		Book.findById({ _id: req.params.id })
-			.then(book => book.remove())
+		Note.findById({ _id: req.params.id })
+			.then(Note => Note.remove())
 			.then(allNotes => res.json(allNotes))
 			.catch(err => res.status(422).json(err));
 	}
