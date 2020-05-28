@@ -33,7 +33,7 @@ const CreateNote = (props) => {
               </Input>
             </FormGroup>
 
-            <Button color="success">Submit</Button>
+            <Button {...props} color="success" >Submit {props.children} </Button>
       </Form>
         </Popover>
       </div>
