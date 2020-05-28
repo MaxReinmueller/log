@@ -21,19 +21,19 @@ const CreateLog = (props) => {
               <Input type="text" name="log_title" id="log_title" />
             </FormGroup>
             <FormGroup>
-              <Label for="category" className="headerText">Category</Label>
-              <Input type="select" name="category" id="category" multiple>
-                <option>Front-end</option>
-                <option>Database</option>
-                <option>JSON</option>
-                <option>4</option>
-                <option>5</option>
-              </Input>
-            </FormGroup>
-            <FormGroup>
               <Label for="note" className="headerText">Note</Label>
               <Input type="textarea" name="note" id="note" />
             </FormGroup>
+            <FormGroup>
+              <Label for="technology" className="headerText">Technology</Label>
+              <Input type="text" name="technology" id="technology" />
+            </FormGroup>
+            <FormGroup>
+              <Label for="category" className="headerText">Category</Label>
+              <Input type="text" name="category" id="category">
+              </Input>
+            </FormGroup>
+
             <Button color="success">Submit</Button>
       </Form>
         </Popover>
