@@ -1,0 +1,29 @@
+[
+  {
+    "id": 3,
+    "date_modified": "05/12/2020",
+    "title": "Mongodb Cert",
+    "category": "Backend, Database, Mongodb",
+    "methods":"NA",
+    "note": "I need to be more proficient with a database to be able to write my backend. I started the mongodb Developer Learning Path and plan on earning a certificate. I chose mongodb because I don't know what my side projects data structures will be ahead of time so I am taking advantage of the flexibility offered by mongodb.",
+    "references": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+  },
+  {
+    "id": 2,
+    "date_modified": "05/05/2020",
+    "title": ".map()",
+    "category": "Front-end, Methods",
+    "methods":".map()",
+    "note": "Only works on arrays. Creates a new array from an old array. Used to modify or use an array without changing the original array. Behaves like a for loop",
+    "references": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+  },
+  {
+    "id": 1,
+    "date_modified": "05/05/2020",
+    "title": "Getting Log Started",
+    "category": "database, JSON, Front-end",
+    "methods":".map()",
+    "note": "I am making a JSON file to simulate a database to map the information over the front end components",
+    "references": "None"
+  }
+]

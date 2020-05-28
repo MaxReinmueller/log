@@ -18,10 +18,10 @@ const PipNav = props => {
             </InputGroupAddon>
         </InputGroup>
 
-        <Button outline color="success" size="lg" block href="/solutions" >SOLUTIONS</Button>
+        {/* <Button outline color="success" size="lg" block href="/solutions" >SOLUTIONS</Button> */}
         <Button outline color="success" size="lg" block href="/techstacks">TECH / STACKS</Button>
         <Button outline color="success" size="lg" block href="/log">LOG ENTRIES</Button>
-        <Button outline color="success" size="lg" block href="https://maxreinmueller.github.io/">GITHUB</Button>
+        {/* <Button outline color="success" size="lg" block href="https://maxreinmueller.github.io/">GITHUB</Button> */}
 
       <h1 className="headerText">)</h1>
       </div>

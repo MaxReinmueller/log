@@ -1,6 +1,7 @@
 import React from 'react';
+import '../App.css';
 import '../page.css'
-import { Container, Row, Col, Card, CardTitle, CardText, CardImg, CardImgOverlay  } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import PipNav from '../components/nav/PipNav'
 import Header from '../components/FooterHeader/Header'
 import Footer from '../components/FooterHeader/Footer'
@@ -19,7 +20,7 @@ class LandingPage extends React.Component {
 
   render() {
     return(
-      <div className="All">
+      <div className="All app">
       <Container fluid >
         <Row>
           <Col>

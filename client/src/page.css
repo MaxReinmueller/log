@@ -1,13 +1,9 @@
-.App {
+.ALL {
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background-image: url(https://github.com/MaxReinmueller/logfoobar/blob/master/public/pipbackground2.jpg?raw=true);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; */
 }
 
 

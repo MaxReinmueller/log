@@ -20,18 +20,18 @@ const MobileNav = (props) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="/solutions">SOLUTIONS</NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink href="/techstacks">TECH / STACKS</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/log">LOG ENTRIES</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="https://maxreinmueller.github.io/">GITHUB</NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Navbar>

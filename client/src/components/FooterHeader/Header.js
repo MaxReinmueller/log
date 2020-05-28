@@ -5,7 +5,7 @@ import '../../page.css';
 const Header = (props) => {
   return (
     <div className="headerCss">
-      <a href="/" ><p className="headFootTxt">MAX REINMUELLER OPERATING SYSTEM</p></a>
+      <p className="headFootTxt">MAX REINMUELLER OPERATING SYSTEM</p>
     </div>
   )
 }
