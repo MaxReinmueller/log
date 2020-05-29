@@ -73,7 +73,7 @@ render(){
         date={entry.date}
         note={entry.note}
         category={entry.category}
-        technology={entry.tech}
+        technology={entry.technology}
       />
       ))}
       <br></br>
