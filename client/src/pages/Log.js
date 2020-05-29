@@ -5,6 +5,7 @@ import noteAPI from '../utils/noteAPI';
 import { Container, Row, Col, Button } from 'reactstrap';
 import MobileNav from '../components/nav/MobileNav';
 import LogCard from '../components/Log/LogCard';
+import CreateNote from '../components/Log/CreateNote'
 import { Input, FormBtn } from '../components/Form';
 
 class Log extends React.Component {
@@ -64,58 +65,75 @@ render(){
     <div className="All">
       <MobileNav />
       <Container>
-      <form>
-        <Input
-          value={this.state.title}
-          onChange={this.handleInputChange}
-          name="title"
-          placeholder="Title (required)"
-        />
-        <Input
-          value={this.state.note}
-          onChange={this.handleInputChange}
-          name="note"
-          placeholder="note (required)"
-        />
-        <Input
-          value={this.state.technology}
-          onChange={this.handleInputChange}
-          name="technology"
-          placeholder="technology (required)"
-        />
-        <Input
-          value={this.state.category}
-          onChange={this.handleInputChange}
-          name="category"
-          placeholder="category (required)"
-        />
-        <Input
-          value={this.state.date}
-          onChange={this.handleInputChange}
-          name="date"
-          placeholder="date (required)"
-        />
-
-        <FormBtn
-          disabled={!(this.state.author && this.state.note && this.state.technology && this.state.category && this.state.date)}
-          onClick={this.handleFormSubmit}
-        >
-          Submit
-        </FormBtn>
-      </form>
       <h1 className="headerText mt-4 mb-3">Log Entries </h1>
-      <p className="headerText mt-3">Some kind of filter goes here</p>
-      {this.state.log_entries.map((entry) => (
+      {this.state.notes.map((entry) => (
       <LogCard 
         id={entry.id}
         title={entry.title}
-        date={entry.date_modified}
+        date={entry.date}
         note={entry.note}
         category={entry.category}
+        technology={entry.tech}
       />
       ))}
       <br></br>
-      
+      <h1 className="headerText mt-4 mb-3">New Entry </h1>
+      <form>
+        <Row>
+          <Col>
+            <Input
+              value={this.state.title}
+              onChange={this.handleInputChange}
+              name="title"
+              placeholder="Title"
+            />
+            </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Input
+              value={this.state.note}
+              onChange={this.handleInputChange}
+              name="note"
+              placeholder="note"
+            />
+          </Col>
+        </Row>
+        <Row>
+            <Col>
+              <Input
+                value={this.state.technology}
+                onChange={this.handleInputChange}
+                name="technology"
+                placeholder="technology"
+              />
+            </Col>
+            <Col>
+              <Input
+                value={this.state.category}
+                onChange={this.handleInputChange}
+                name="category"
+                placeholder="category"
+              />
+            </Col>
+            <Col>
+              <Input
+                value={this.state.date}
+                onChange={this.handleInputChange}
+                name="date"
+                placeholder="date"
+              />
+            </Col>
+        </Row>
+        <Row>
+        <Col>
+        <FormBtn
+          onClick={this.handleFormSubmit}>
+          Submit
+        </FormBtn>
+        </Col>
+        </Row>
+      </form>
       </Container>
     </div>
   )
